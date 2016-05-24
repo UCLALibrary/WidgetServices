@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- The contents of this file will be loaded for each web application -->
+<Context>
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <ResourceLink name="jdbc/scheduleDS"
+                 global="jdbc/scheduleDS"
+                  type="javax.sql.DataSource" />
+    <ResourceLink name="jdbc/erdbDS"
+                 global="jdbc/erdbDS"
+                  type="javax.sql.DataSource" />
+    <ResourceLink name="jdbc/billDS"
+                 global="jdbc/billDS"
+                  type="javax.sql.DataSource" />
+    <ResourceLink name="jdbc/rssDS"
+                 global="jdbc/rssDS"
+                  type="javax.sql.DataSource" />
+</Context>

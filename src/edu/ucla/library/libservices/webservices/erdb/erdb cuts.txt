@@ -1,0 +1,78 @@
+from bean
+  //private String e_holdings;
+  //private String access_provider;
+   //private String subject;
+    /*public void setE_holdings( String e_holdings )
+    {
+      this.e_holdings = e_holdings;
+    }
+
+    public String getE_holdings()
+    {
+      return e_holdings;
+    }
+
+    public void setAccess_provider( String access_provider )
+    {
+      this.access_provider = access_provider;
+    }
+
+    public String getAccess_provider()
+    {
+      return access_provider;
+    }*/
+     /*public void setSubject( String subject )
+     {
+       this.subject = subject;
+     }
+
+     public String getSubject()
+     {
+       return subject;
+     }*/
+
+from mapper
+    //bean.setAccess_provider( rs.getString( "access_provider" ) );
+    //bean.setE_holdings( rs.getString( "e_holdings" ) );
+    //bean.setSubject( rs.getString( "subject" ) );
+
+from generator
+      //output.append( buildElement( E_HOLDINGS, cleanUp( theBean.getE_holdings() ) ) );
+      //output.append( buildElement( ACCESS_PROVIDER, cleanUp( theBean.getAccess_provider() ) ) );
+      //output.append( buildElement( SUBJECT, cleanUp( theBean.getSubject() ) ) );
+  //private static final String E_HOLDINGS = "e_holdings";
+  //private static final String ACCESS_PROVIDER = "access_provider";
+   //private static final String SUBJECT = "subject";
+    //private static final String JOURNAL_TYPE = "ejournal";
+    //output = new StringBuffer( "{\"resources\":[" );
+    /*addResource( resources.get( 0 ), true );
+
+    if ( resources.size() > 1 )
+    {
+      for ( int index = 1; index < resources.size(); index++ )
+      {
+        addResource( resources.get( index ), false );
+      }
+    }*/
+  /*private void addResource( ERDbResourceBean resource, boolean isFirst )
+    throws JSONException
+  {
+    JSONObject obj;
+
+    obj = new JSONObject( resource, false );
+    output.append( ( isFirst? "" : 
+                      "," ) ).append( "\"resource\":" ).append( obj.toString( 1 ) );
+  }*/
+
+// ( type.equalsIgnoreCase(DATABASE_TYPE) ? DATABASE : JOURNAL );
+  private static final String DATABASE_TYPE = "database";
+  private static final String DATABASE = "Article Databases";
+  private static final String JOURNAL = "Electronic Journals";
+    /*query = new StringBuffer( "SELECT " );
+
+    if ( !getCount().equalsIgnoreCase( "all" ) )
+      query.append( " TOP " ).append( getCount() );
+
+    query.append( " * FROM ERdb_Test.dbo.v_top_urls WHERE type = '" );
+    query.append( getType() ).append( "' AND ccle_dept = '" );
+    query.append( getSubject() ).append( "' ORDER BY total DESC" );*/
